@@ -1,0 +1,20 @@
+Thor Gordao
+inteiro x = 1
+au ( x > 0 )
+    y = 3
+    k = 2
+    p = 3
+petisco
+au ( x > 0 )
+    y = 3
+    k = 2
+    p = 3
+petisco
+auau ( a = 0 ; a < 10 ; a carnecarne )
+    y = 3
+    k = 2
+    p = 3
+petisco
+auuuu ( x > 0 )
+    latindo ( a )
+petisco

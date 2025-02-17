@@ -1,0 +1,46 @@
+prog -> "Thor" "Gordao" quebrou declara bloco
+
+declara -> quebrou ("inteiro" | "float" | "str") id operador_atribu (expre_mate | elemento)
+
+bloco -> cmd+
+
+cmd -> ler | latindo | expre_atrib | if | while | for
+
+ler -> leia "(" id ")" quebrou
+
+latindo -> "latindo" "(" texto | ID ")" quebrou
+
+expre_mate -> fator operador_ad fator | fator
+
+expre_atrib -> id operador_atribu expre_mate quebrou
+
+operador_ad -> "+" | "-"
+
+fator -> elemento operador_mul elemento || elemento
+
+operador_mul -> "*" | "/"
+
+elemento -> num | id | "(" expre_mate ")"
+
+if -> "au" "("  condicao  ")" quebrou bloco "petisco"
+
+quebrou - > "\n"
+
+condicao -> id operador_rel num
+
+operador_rel -> ’<’ | ’>’ | ’<’ ’=’ | ’>’ ’=’ | ’!’ ’=’ | ’=’ ’=’
+
+while -> "auuuu" "("  condicao  ")" quebrou  bloco "petisco"
+
+for -> "auau" "(" declara operador_atribu num "-" id operador_rel num "-" incredesce ")" quebrou bloco "petisco"
+
+incredesce -> id "+" "+" | id "-" "-"
+
+
+operador_atribu -> "="
+
+texto -> ’ "’ (0-9 | a-z | A-Z | ’ ’ )+ ’ "’
+
+num -> [0-9]+
+
+id -> [a-z]+
